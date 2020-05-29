@@ -1,0 +1,1358 @@
+@charset "UTF-8";
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+/* line 15, h-game/scss/_null.scss */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 25, h-game/scss/_null.scss */
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+/* line 29, h-game/scss/_null.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 33, h-game/scss/_null.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+/* line 43, h-game/scss/_null.scss */
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+/* line 58, h-game/scss/_null.scss */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+/* line 62, h-game/scss/_null.scss */
+ul {
+  list-style: none; }
+
+/* line 64, h-game/scss/_null.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 66, h-game/scss/_null.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 71, h-game/scss/_null.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 73, h-game/scss/_null.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 75, h-game/scss/_null.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+/* line 78, h-game/scss/_null.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 79, h-game/scss/_null.scss */
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+/* line 80, h-game/scss/_null.scss */
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+/* line 82, h-game/scss/_null.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 84, h-game/scss/_null.scss */
+input, select {
+  vertical-align: middle; }
+
+/* line 86, h-game/scss/_null.scss */
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+/* line 93, h-game/scss/_null.scss */
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+/* line 94, h-game/scss/_null.scss */
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+/* line 95, h-game/scss/_null.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+/* line 96, h-game/scss/_null.scss */
+.ie6 input {
+  vertical-align: text-bottom; }
+
+/* line 98, h-game/scss/_null.scss */
+select, input, textarea {
+  font: 99% sans-serif; }
+
+/* line 100, h-game/scss/_null.scss */
+table {
+  font-size: inherit;
+  font: 100%; }
+
+/* line 102, h-game/scss/_null.scss */
+small {
+  font-size: 85%; }
+
+/* line 104, h-game/scss/_null.scss */
+strong {
+  font-weight: bold; }
+
+/* line 106, h-game/scss/_null.scss */
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+/* line 109, h-game/scss/_null.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+/* line 110, h-game/scss/_null.scss */
+sup {
+  top: -0.5em; }
+
+/* line 111, h-game/scss/_null.scss */
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+/* line 114, h-game/scss/_null.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+/* line 117, h-game/scss/_null.scss */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+/* line 125, h-game/scss/_null.scss */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+/* line 128, h-game/scss/_null.scss */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+/* line 132, h-game/scss/_null.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+/* line 140, h-game/scss/_null.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+/* line 141, h-game/scss/_null.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 142, h-game/scss/_null.scss */
+.clearfix {
+  zoom: 1; }
+
+/* line 3, h-game/scss/style.scss */
+.container {
+  max-width: 1920px;
+  margin: 0 auto; }
+
+/* line 9, h-game/scss/style.scss */
+.header .header__bgimg {
+  background-image: url(../img/bgheader.jpg);
+  max-width: 1920px;
+  height: 725px; }
+  /* line 13, h-game/scss/style.scss */
+  .header .header__bgimg .header__top {
+    height: 13px; }
+  /* line 16, h-game/scss/style.scss */
+  .header .header__bgimg .header__nav_bg {
+    background-image: url(../img/navbg.png);
+    height: 83px; }
+  /* line 20, h-game/scss/style.scss */
+  .header .header__bgimg .header__nav {
+    display: flex;
+    justify-content: center; }
+    /* line 23, h-game/scss/style.scss */
+    .header .header__bgimg .header__nav .header__nav__left {
+      margin-right: 158px;
+      margin-top: 20px; }
+      /* line 26, h-game/scss/style.scss */
+      .header .header__bgimg .header__nav .header__nav__left a {
+        text-decoration: none; }
+      /* line 29, h-game/scss/style.scss */
+      .header .header__bgimg .header__nav .header__nav__left .header__nav__left__name {
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 22.36px;
+        letter-spacing: 0.77px; }
+      /* line 37, h-game/scss/style.scss */
+      .header .header__bgimg .header__nav .header__nav__left .header__nav__left__desc {
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.36px;
+        text-transform: uppercase;
+        letter-spacing: 30.41px;
+        padding-top: 5px; }
+    /* line 48, h-game/scss/style.scss */
+    .header .header__bgimg .header__nav .header__nav__phone {
+      font-family: 'Roboto Condensed', sans-serif;
+      display: flex;
+      margin-right: 40px;
+      margin-top: 28px; }
+      /* line 53, h-game/scss/style.scss */
+      .header .header__bgimg .header__nav .header__nav__phone .header__nav__tel {
+        padding-top: 3px; }
+      /* line 56, h-game/scss/style.scss */
+      .header .header__bgimg .header__nav .header__nav__phone a {
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 22.36px;
+        letter-spacing: 0.36px;
+        text-decoration: none;
+        padding-left: 14px; }
+        /* line 64, h-game/scss/style.scss */
+        .header .header__bgimg .header__nav .header__nav__phone a:hover {
+          opacity: 0.5; }
+    /* line 69, h-game/scss/style.scss */
+    .header .header__bgimg .header__nav .header__nav__email {
+      font-family: 'Roboto Condensed', sans-serif;
+      display: flex;
+      margin-right: 100px;
+      margin-top: 32px; }
+      /* line 75, h-game/scss/style.scss */
+      .header .header__bgimg .header__nav .header__nav__email a {
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 22.36px;
+        letter-spacing: 0.36px;
+        text-decoration: none;
+        padding-left: 14px; }
+        /* line 83, h-game/scss/style.scss */
+        .header .header__bgimg .header__nav .header__nav__email a:hover {
+          opacity: 0.5; }
+    /* line 88, h-game/scss/style.scss */
+    .header .header__bgimg .header__nav .header__nav__search {
+      display: flex; }
+      /* line 90, h-game/scss/style.scss */
+      .header .header__bgimg .header__nav .header__nav__search .search__form__button {
+        width: 50px;
+        height: 38px;
+        border: 1px solid #ffffff; }
+        /* line 94, h-game/scss/style.scss */
+        .header .header__bgimg .header__nav .header__nav__search .search__form__button:hover {
+          opacity: 0.5; }
+        /* line 97, h-game/scss/style.scss */
+        .header .header__bgimg .header__nav .header__nav__search .search__form__button .search_ico {
+          padding-top: 10px;
+          padding-left: 15px; }
+    /* line 103, h-game/scss/style.scss */
+    .header .header__bgimg .header__nav .header__nav__search {
+      margin-left: 100px;
+      margin-top: 20px; }
+  /* line 109, h-game/scss/style.scss */
+  .header .header__bgimg .header__nav__search .form_search {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 157px;
+    height: 38px;
+    border: 1px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    letter-spacing: 0.36px;
+    padding-left: 16px; }
+  /* line 123, h-game/scss/style.scss */
+  .header .header__bgimg input::placeholder {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    letter-spacing: 0.36px; }
+  /* line 130, h-game/scss/style.scss */
+  .header .header__bgimg .header__menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 30px; }
+    /* line 136, h-game/scss/style.scss */
+    .header .header__bgimg .header__menu a {
+      font-family: 'Roboto Condensed', sans-serif;
+      text-decoration: none;
+      margin-left: 30px;
+      color: #000000;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 22.36px;
+      letter-spacing: 0.36px;
+      position: relative;
+      cursor: pointer;
+      line-height: 1;
+      text-decoration: none; }
+    /* line 151, h-game/scss/style.scss */
+    .header .header__bgimg .header__menu a:after {
+      margin-top: 30px;
+      display: block;
+      position: absolute;
+      /*изменить на right:0;, чтобы изменить направление подчёркивания */
+      width: 0;
+      /*задаём длинну линии до наведения курсора*/
+      height: 3px;
+      /*задаём ширину линии*/
+      background-color: #ffffff;
+      /*задаём цвет линии*/
+      content: "";
+      transition: width 0.3s ease-out;
+      /*задаём время анимации*/ }
+    /* line 166, h-game/scss/style.scss */
+    .header .header__bgimg .header__menu a:hover:after,
+    .header .header__bgimg .header__menu a:focus:after {
+      width: 100%;
+      /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/ }
+    /* line 171, h-game/scss/style.scss */
+    .header .header__bgimg .header__menu .header__menu_active {
+      color: #ffffff;
+      letter-spacing: 0.36px; }
+      /* line 174, h-game/scss/style.scss */
+      .header .header__bgimg .header__menu .header__menu_active:hover {
+        color: #000000; }
+    /* line 178, h-game/scss/style.scss */
+    .header .header__bgimg .header__menu .header__menu_active:before {
+      width: 100%; }
+    /* line 181, h-game/scss/style.scss */
+    .header .header__bgimg .header__menu .header__menu_active:after {
+      width: 100%; }
+  /* line 185, h-game/scss/style.scss */
+  .header .header__bgimg .header__prename {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.18px;
+    margin-top: 110px; }
+    /* line 194, h-game/scss/style.scss */
+    .header .header__bgimg .header__prename:after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 2px;
+      background-color: #ffffff;
+      margin-left: -96px;
+      margin-top: 57px; }
+  /* line 204, h-game/scss/style.scss */
+  .header .header__bgimg .header__name {
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.6px; }
+  /* line 214, h-game/scss/style.scss */
+  .header .header__bgimg .header__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 76px; }
+    /* line 218, h-game/scss/style.scss */
+    .header .header__bgimg .header__social .header__social_fb {
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 12px; }
+      /* line 224, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_fb:hover {
+        opacity: 0.5; }
+      /* line 227, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_fb .header_icon {
+        padding-top: 11px;
+        padding-left: 13px; }
+    /* line 232, h-game/scss/style.scss */
+    .header .header__bgimg .header__social .header__social_tw {
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 12px; }
+      /* line 238, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_tw:hover {
+        opacity: 0.5; }
+      /* line 241, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_tw .header_icon2 {
+        padding-top: 11px;
+        padding-left: 11px; }
+    /* line 246, h-game/scss/style.scss */
+    .header .header__bgimg .header__social .header__social_rss {
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 12px; }
+      /* line 252, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_rss:hover {
+        opacity: 0.5; }
+      /* line 255, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_rss .header_icon3 {
+        padding-top: 11px;
+        padding-left: 12px; }
+    /* line 260, h-game/scss/style.scss */
+    .header .header__bgimg .header__social .header__social_vk {
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px; }
+      /* line 265, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_vk:hover {
+        opacity: 0.5; }
+      /* line 268, h-game/scss/style.scss */
+      .header .header__bgimg .header__social .header__social_vk .header_icon4 {
+        padding-top: 13px;
+        padding-left: 8px; }
+
+/* line 277, h-game/scss/style.scss */
+.slider1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 81px; }
+  /* line 281, h-game/scss/style.scss */
+  .slider1 .slider1__about_name {
+    font-family: 'Poppins', sans-serif;
+    color: #f44336;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px; }
+  /* line 288, h-game/scss/style.scss */
+  .slider1 .slider1__about_text {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #999999;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    margin-right: 33px;
+    margin-top: 35px; }
+    /* line 297, h-game/scss/style.scss */
+    .slider1 .slider1__about_text .spans1 {
+      padding-top: 40px; }
+  /* line 301, h-game/scss/style.scss */
+  .slider1 .slider1__img {
+    padding-bottom: 81px; }
+
+/* line 306, h-game/scss/style.scss */
+.slider2 {
+  background-color: #f7f7f7; }
+  /* line 308, h-game/scss/style.scss */
+  .slider2 .slider2__name {
+    font-family: 'Poppins', sans-serif;
+    color: #f44336;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 92px; }
+  /* line 317, h-game/scss/style.scss */
+  .slider2 .slider2__items {
+    margin-top: 91px;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 321, h-game/scss/style.scss */
+    .slider2 .slider2__items .slider2_items__1 {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+    /* line 326, h-game/scss/style.scss */
+    .slider2 .slider2__items .slider2_items__2 {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+    /* line 331, h-game/scss/style.scss */
+    .slider2 .slider2__items .slider2_items__3 {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+    /* line 336, h-game/scss/style.scss */
+    .slider2 .slider2__items .slider2__item {
+      display: flex;
+      justify-content: center; }
+      /* line 340, h-game/scss/style.scss */
+      .slider2 .slider2__items .slider2__item .slider2__item_left .slider2__item_left_name {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        padding-bottom: 18px;
+        text-align: right; }
+      /* line 350, h-game/scss/style.scss */
+      .slider2 .slider2__items .slider2__item .slider2__item_left .slider2__item_left_text {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #999999;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.12px;
+        padding-bottom: 86px;
+        text-align: right; }
+      /* line 362, h-game/scss/style.scss */
+      .slider2 .slider2__items .slider2__item .slider2__item_left2 .slider2__item_left_name2 {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        padding-bottom: 18px;
+        text-align: left; }
+      /* line 372, h-game/scss/style.scss */
+      .slider2 .slider2__items .slider2__item .slider2__item_left2 .slider2__item_left_text2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #999999;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.12px;
+        padding-bottom: 86px;
+        text-align: left; }
+      /* line 383, h-game/scss/style.scss */
+      .slider2 .slider2__items .slider2__item .slider2__item_right2 {
+        margin-left: 90px;
+        margin-right: 68px;
+        border: 1px solid #acacac;
+        border-radius: 50%;
+        width: 102px;
+        height: 102px;
+        background-color: #e1e1e1; }
+        /* line 391, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right2:hover {
+          background-color: #f44336; }
+        /* line 394, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right2 .sl2icon4 {
+          padding-left: 36px;
+          padding-top: 37px; }
+        /* line 398, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right2 .sl2icon5 {
+          padding-left: 36px;
+          padding-top: 37px; }
+        /* line 402, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right2 .sl2icon6 {
+          padding-left: 36px;
+          padding-top: 37px; }
+      /* line 407, h-game/scss/style.scss */
+      .slider2 .slider2__items .slider2__item .slider2__item_right {
+        margin-left: 66px;
+        border: 1px solid #acacac;
+        border-radius: 50%;
+        width: 102px;
+        height: 102px;
+        background-color: #e1e1e1; }
+        /* line 414, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right:hover {
+          background-color: #f44336; }
+        /* line 417, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right .sl2icon1 {
+          padding-left: 42px;
+          padding-top: 37px; }
+        /* line 421, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right .sl2icon2 {
+          padding-left: 43px;
+          padding-top: 37px; }
+        /* line 425, h-game/scss/style.scss */
+        .slider2 .slider2__items .slider2__item .slider2__item_right .sl2icon3 {
+          padding-left: 38px;
+          padding-top: 37px; }
+    /* line 433, h-game/scss/style.scss */
+    .slider2 .slider2__items .slider2__item_active .slider2__item_left .slider2__item_left_name {
+      font-family: 'Poppins', sans-serif;
+      color: #f44336;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.16px; }
+    /* line 442, h-game/scss/style.scss */
+    .slider2 .slider2__items .slider2__item_active .slider2__item_right {
+      background-color: #f44336; }
+  /* line 447, h-game/scss/style.scss */
+  .slider2 .slider2__item_1 {
+    order: 1; }
+  /* line 450, h-game/scss/style.scss */
+  .slider2 .slider2__item_2 {
+    order: 3; }
+  /* line 453, h-game/scss/style.scss */
+  .slider2 .slider2__item_3 {
+    order: 5; }
+  /* line 456, h-game/scss/style.scss */
+  .slider2 .slider2__item_4 {
+    order: 2; }
+  /* line 459, h-game/scss/style.scss */
+  .slider2 .slider2__item_5 {
+    order: 4; }
+  /* line 462, h-game/scss/style.scss */
+  .slider2 .slider2__item_6 {
+    order: 6; }
+
+/* line 468, h-game/scss/style.scss */
+.slider3 .slider3__name {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-top: 93px;
+  color: #f44336;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px; }
+
+/* line 477, h-game/scss/style.scss */
+.slider3 .slider3__items {
+  margin-top: 92px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100%; }
+  /* line 483, h-game/scss/style.scss */
+  .slider3 .slider3__items .slider3__item1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 186px; }
+    /* line 487, h-game/scss/style.scss */
+    .slider3 .slider3__items .slider3__item1 .slider3__item_top {
+      height: 376px; }
+    /* line 490, h-game/scss/style.scss */
+    .slider3 .slider3__items .slider3__item1 .slider3__item_bot {
+      width: 270px;
+      height: 105px;
+      background-color: #f7f7f7;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 23.94px;
+      text-transform: uppercase;
+      letter-spacing: 0.14px;
+      padding-top: 20px; }
+      /* line 503, h-game/scss/style.scss */
+      .slider3 .slider3__items .slider3__item1 .slider3__item_bot a {
+        color: #000000;
+        text-decoration: none; }
+      /* line 507, h-game/scss/style.scss */
+      .slider3 .slider3__items .slider3__item1 .slider3__item_bot .slider3__item__bot_button {
+        text-align: center;
+        width: 130px;
+        height: 30px;
+        background-color: #f44336;
+        margin-left: 70px;
+        margin-top: 23px;
+        padding-top: 5px; }
+        /* line 515, h-game/scss/style.scss */
+        .slider3 .slider3__items .slider3__item1 .slider3__item_bot .slider3__item__bot_button:hover {
+          opacity: 0.5; }
+  /* line 521, h-game/scss/style.scss */
+  .slider3 .slider3__items .slider3__item2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 29px; }
+    /* line 525, h-game/scss/style.scss */
+    .slider3 .slider3__items .slider3__item2 .slider3__item_top {
+      height: 376px; }
+    /* line 528, h-game/scss/style.scss */
+    .slider3 .slider3__items .slider3__item2 .slider3__item_bot {
+      width: 270px;
+      height: 105px;
+      background-color: #f7f7f7;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 23.94px;
+      text-transform: uppercase;
+      letter-spacing: 0.14px;
+      padding-top: 20px; }
+      /* line 541, h-game/scss/style.scss */
+      .slider3 .slider3__items .slider3__item2 .slider3__item_bot a {
+        color: #000000;
+        text-decoration: none; }
+      /* line 545, h-game/scss/style.scss */
+      .slider3 .slider3__items .slider3__item2 .slider3__item_bot .slider3__item__bot_button {
+        text-align: center;
+        width: 130px;
+        height: 30px;
+        background-color: #f44336;
+        margin-left: 70px;
+        margin-top: 23px;
+        padding-top: 5px; }
+        /* line 553, h-game/scss/style.scss */
+        .slider3 .slider3__items .slider3__item2 .slider3__item_bot .slider3__item__bot_button:hover {
+          opacity: 0.5; }
+
+/* line 560, h-game/scss/style.scss */
+.slider3 .slider3__item3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 29px; }
+  /* line 564, h-game/scss/style.scss */
+  .slider3 .slider3__item3 .slider3__item_top {
+    height: 376px; }
+  /* line 567, h-game/scss/style.scss */
+  .slider3 .slider3__item3 .slider3__item_bot {
+    width: 270px;
+    height: 105px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.94px;
+    text-transform: uppercase;
+    letter-spacing: 0.14px;
+    padding-top: 20px; }
+    /* line 580, h-game/scss/style.scss */
+    .slider3 .slider3__item3 .slider3__item_bot a {
+      color: #000000;
+      text-decoration: none; }
+    /* line 584, h-game/scss/style.scss */
+    .slider3 .slider3__item3 .slider3__item_bot .slider3__item__bot_button {
+      text-align: center;
+      width: 130px;
+      height: 30px;
+      background-color: #f44336;
+      margin-left: 70px;
+      margin-top: 23px;
+      padding-top: 5px; }
+      /* line 592, h-game/scss/style.scss */
+      .slider3 .slider3__item3 .slider3__item_bot .slider3__item__bot_button:hover {
+        opacity: 0.5; }
+
+/* line 600, h-game/scss/style.scss */
+.slider3__item4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 29px; }
+  /* line 604, h-game/scss/style.scss */
+  .slider3__item4 .slider3__item_top {
+    height: 376px; }
+  /* line 607, h-game/scss/style.scss */
+  .slider3__item4 .slider3__item_bot {
+    width: 270px;
+    height: 105px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.94px;
+    text-transform: uppercase;
+    letter-spacing: 0.14px;
+    padding-top: 20px; }
+    /* line 620, h-game/scss/style.scss */
+    .slider3__item4 .slider3__item_bot a {
+      color: #000000;
+      text-decoration: none; }
+    /* line 624, h-game/scss/style.scss */
+    .slider3__item4 .slider3__item_bot .slider3__item__bot_button {
+      text-align: center;
+      width: 130px;
+      height: 30px;
+      background-color: #f44336;
+      margin-left: 70px;
+      padding-top: 5px; }
+      /* line 631, h-game/scss/style.scss */
+      .slider3__item4 .slider3__item_bot .slider3__item__bot_button:hover {
+        opacity: 0.5; }
+
+/* line 638, h-game/scss/style.scss */
+.slider4 {
+  background-image: url(../img/slider4bg.jpg);
+  height: 537px;
+  background-color: rgba(102, 102, 102, 0.81); }
+  /* line 642, h-game/scss/style.scss */
+  .slider4 .slider4__name {
+    padding-top: 85px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px; }
+  /* line 651, h-game/scss/style.scss */
+  .slider4 .slider4__marks {
+    text-align: center;
+    margin-top: 90px;
+    opacity: 0.7; }
+  /* line 656, h-game/scss/style.scss */
+  .slider4 .slider4__main {
+    display: flex;
+    justify-content: center;
+    margin-top: 51px; }
+    /* line 660, h-game/scss/style.scss */
+    .slider4 .slider4__main .slider4__text {
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px; }
+      /* line 667, h-game/scss/style.scss */
+      .slider4 .slider4__main .slider4__text .john {
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: 800; }
+      /* line 672, h-game/scss/style.scss */
+      .slider4 .slider4__main .slider4__text .founder {
+        padding-top: 40px;
+        font-size: 16px;
+        font-weight: 300; }
+    /* line 678, h-game/scss/style.scss */
+    .slider4 .slider4__main .slider4__slideleft {
+      border: 1px solid #ffffff;
+      width: 37px;
+      height: 37px;
+      margin-right: 79px; }
+      /* line 683, h-game/scss/style.scss */
+      .slider4 .slider4__main .slider4__slideleft:hover {
+        opacity: 0.5; }
+      /* line 686, h-game/scss/style.scss */
+      .slider4 .slider4__main .slider4__slideleft .sl4ico {
+        padding-top: 9px;
+        padding-left: 10px; }
+    /* line 691, h-game/scss/style.scss */
+    .slider4 .slider4__main .slider4__slideright {
+      border: 1px solid #ffffff;
+      width: 37px;
+      height: 37px;
+      margin-left: 79px; }
+      /* line 696, h-game/scss/style.scss */
+      .slider4 .slider4__main .slider4__slideright:hover {
+        opacity: 0.5; }
+      /* line 699, h-game/scss/style.scss */
+      .slider4 .slider4__main .slider4__slideright .sl4ico {
+        padding-top: 9px;
+        padding-left: 14px; }
+
+/* line 708, h-game/scss/style.scss */
+.slider5 .slider5__name {
+  padding-top: 97px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #f44336;
+  font-size: 36px;
+  font-weight: 500; }
+
+/* line 716, h-game/scss/style.scss */
+.slider5 .slider5__main {
+  display: flex;
+  justify-content: center;
+  margin-top: 103px; }
+  /* line 720, h-game/scss/style.scss */
+  .slider5 .slider5__main .slider5__right {
+    margin-left: 92px; }
+    /* line 723, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__bottom .sl5padding {
+      margin-bottom: 130px; }
+    /* line 726, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__bottom a {
+      text-decoration: none; }
+    /* line 730, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__bottom_block2 {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      height: 44px;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-left: 14px;
+      margin-top: 2px; }
+      /* line 743, h-game/scss/style.scss */
+      .slider5 .slider5__main .slider5__right .slider5__bottom_block2:hover {
+        opacity: 0.5; }
+    /* line 747, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__main_img {
+      margin-top: 48px; }
+      /* line 750, h-game/scss/style.scss */
+      .slider5 .slider5__main .slider5__right .slider5__main_img .sl5_main_full:hover {
+        opacity: 0.5; }
+    /* line 755, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__right_top {
+      display: flex; }
+      /* line 757, h-game/scss/style.scss */
+      .slider5 .slider5__main .slider5__right .slider5__right_top:after {
+        content: '';
+        position: absolute;
+        width: 570px;
+        height: 1px;
+        background-color: #c5c5c5;
+        margin-top: 38px; }
+      /* line 765, h-game/scss/style.scss */
+      .slider5 .slider5__main .slider5__right .slider5__right_top .slider5__right_name {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500; }
+      /* line 771, h-game/scss/style.scss */
+      .slider5 .slider5__main .slider5__right .slider5__right_top .slider5__right_arrows {
+        margin-left: 308px; }
+        /* line 773, h-game/scss/style.scss */
+        .slider5 .slider5__main .slider5__right .slider5__right_top .slider5__right_arrows .sl5arrow1 {
+          margin-right: 11px; }
+          /* line 775, h-game/scss/style.scss */
+          .slider5 .slider5__main .slider5__right .slider5__right_top .slider5__right_arrows .sl5arrow1:hover {
+            opacity: 0.5; }
+        /* line 780, h-game/scss/style.scss */
+        .slider5 .slider5__main .slider5__right .slider5__right_top .slider5__right_arrows .sl5arrow2:hover {
+          opacity: 0.5; }
+    /* line 786, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__bottom_block {
+      margin-top: 34px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      border: 1px solid #ffffff;
+      background-color: #ffffff; }
+      /* line 792, h-game/scss/style.scss */
+      .slider5 .slider5__main .slider5__right .slider5__bottom_block a {
+        text-decoration: none; }
+    /* line 796, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__bottom_name {
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: #ffffff;
+      width: 568px;
+      height: 37px;
+      padding-left: 14px;
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 10px; }
+      /* line 806, h-game/scss/style.scss */
+      .slider5 .slider5__main .slider5__right .slider5__bottom_name:hover {
+        opacity: 0.5; }
+    /* line 810, h-game/scss/style.scss */
+    .slider5 .slider5__main .slider5__right .slider5__bottom_text {
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #505050;
+      font-size: 14px;
+      font-weight: 300;
+      background-color: #f5f5f5;
+      width: 568px;
+      height: 144px;
+      padding-left: 13px;
+      padding-top: 39px; }
+
+/* line 824, h-game/scss/style.scss */
+.slider5 .slider5__left .slider5__left_name {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500; }
+
+/* line 830, h-game/scss/style.scss */
+.slider5 .slider5__left .slider__left__items {
+  margin-top: 32px; }
+  /* line 832, h-game/scss/style.scss */
+  .slider5 .slider5__left .slider__left__items .slider5__left__block {
+    display: flex; }
+    /* line 834, h-game/scss/style.scss */
+    .slider5 .slider5__left .slider__left__items .slider5__left__block .slider5__left_item {
+      padding-top: 20px;
+      text-align: center;
+      border-radius: 49px;
+      border: 1px solid #e8e8e8;
+      background-color: #f7f7f7;
+      width: 98px;
+      height: 139px;
+      margin-bottom: 50px; }
+      /* line 843, h-game/scss/style.scss */
+      .slider5 .slider5__left .slider__left__items .slider5__left__block .slider5__left_item .slider5__left_item_date {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-size: 32px;
+        font-weight: 500; }
+      /* line 849, h-game/scss/style.scss */
+      .slider5 .slider5__left .slider__left__items .slider5__left__block .slider5__left_item .slider5__left_item_monthyear {
+        font-family: 'Poppins', sans-serif;
+        color: #9e9e9e;
+        font-size: 14px;
+        font-weight: 500; }
+    /* line 856, h-game/scss/style.scss */
+    .slider5 .slider5__left .slider__left__items .slider5__left__block .slider5__right_item {
+      margin-left: 66px; }
+      /* line 858, h-game/scss/style.scss */
+      .slider5 .slider5__left .slider__left__items .slider5__left__block .slider5__right_item .slider5__right_item_name {
+        padding-top: 24px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #f44336;
+        font-size: 16px;
+        font-weight: bold; }
+      /* line 865, h-game/scss/style.scss */
+      .slider5 .slider5__left .slider__left__items .slider5__left__block .slider5__right_item .slider5__right_item_text {
+        padding-top: 23px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #9e9e9e;
+        font-size: 14px;
+        font-weight: 300; }
+
+/* line 878, h-game/scss/style.scss */
+.slider6 {
+  background-color: #f7f7f7; }
+  /* line 880, h-game/scss/style.scss */
+  .slider6 .slider6__name {
+    padding-top: 98px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #f44336;
+    font-size: 36px;
+    font-weight: 400; }
+  /* line 888, h-game/scss/style.scss */
+  .slider6 .slider6__main {
+    display: flex;
+    justify-content: center; }
+    /* line 891, h-game/scss/style.scss */
+    .slider6 .slider6__main .port2 {
+      margin-left: 28px; }
+    /* line 894, h-game/scss/style.scss */
+    .slider6 .slider6__main .slider6__portrait {
+      margin-top: 61px; }
+      /* line 896, h-game/scss/style.scss */
+      .slider6 .slider6__main .slider6__portrait .slider6__portrait_social {
+        padding-bottom: 80px;
+        display: flex; }
+        /* line 899, h-game/scss/style.scss */
+        .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .fb {
+          border: 2px solid #000000;
+          width: 30px;
+          height: 30px;
+          padding-top: 5px;
+          padding-left: 8px; }
+          /* line 905, h-game/scss/style.scss */
+          .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .fb:hover {
+            opacity: 0.5; }
+        /* line 909, h-game/scss/style.scss */
+        .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .tw {
+          border: 2px solid #000000;
+          width: 30px;
+          height: 30px;
+          margin-left: 17px;
+          padding-top: 6px;
+          padding-left: 6px; }
+          /* line 916, h-game/scss/style.scss */
+          .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .tw:hover {
+            opacity: 0.5; }
+        /* line 920, h-game/scss/style.scss */
+        .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .rss {
+          border: 2px solid #000000;
+          width: 30px;
+          height: 30px;
+          margin-left: 17px;
+          padding-top: 6px;
+          padding-left: 6px; }
+          /* line 927, h-game/scss/style.scss */
+          .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .rss:hover {
+            opacity: 0.5; }
+        /* line 931, h-game/scss/style.scss */
+        .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .vk {
+          border: 2px solid #000000;
+          width: 30px;
+          height: 30px;
+          margin-left: 17px;
+          padding-top: 5px;
+          padding-left: 4px; }
+          /* line 938, h-game/scss/style.scss */
+          .slider6 .slider6__main .slider6__portrait .slider6__portrait_social .vk:hover {
+            opacity: 0.5; }
+      /* line 943, h-game/scss/style.scss */
+      .slider6 .slider6__main .slider6__portrait .slider6__portrait_city {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #838383;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 17px; }
+      /* line 950, h-game/scss/style.scss */
+      .slider6 .slider6__main .slider6__portrait .slider6__portrait_name {
+        font-family: 'Poppins', sans-serif;
+        color: #f44336;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 10px; }
+
+/* line 961, h-game/scss/style.scss */
+.slider7 {
+  background-image: url(../img/sl7bg.jpg);
+  height: 313px; }
+  /* line 964, h-game/scss/style.scss */
+  .slider7 .slider7__email_form {
+    margin-top: 43px;
+    justify-content: center;
+    display: flex; }
+    /* line 968, h-game/scss/style.scss */
+    .slider7 .slider7__email_form a {
+      text-decoration: none; }
+    /* line 971, h-game/scss/style.scss */
+    .slider7 .slider7__email_form .slider7__button {
+      text-align: center;
+      padding-top: 15px;
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: #f44336;
+      width: 119px;
+      height: 53px;
+      margin-top: 1px;
+      margin-left: 12px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 300; }
+      /* line 983, h-game/scss/style.scss */
+      .slider7 .slider7__email_form .slider7__button:hover {
+        opacity: 0.7; }
+  /* line 988, h-game/scss/style.scss */
+  .slider7 .email_form {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 499px;
+    height: 55px;
+    border: none;
+    padding-left: 30px;
+    color: #8e8e8e;
+    font-size: 14px;
+    font-weight: 300; }
+  /* line 998, h-game/scss/style.scss */
+  .slider7 .slider7__name {
+    text-align: center;
+    padding-top: 86px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500; }
+
+/* line 1009, h-game/scss/style.scss */
+.contact .contact__block {
+  display: flex;
+  justify-content: center;
+  margin-top: 89px; }
+
+/* line 1015, h-game/scss/style.scss */
+.contact .contact__block_left a {
+  text-decoration: none;
+  color: #9e9e9e; }
+
+/* line 1020, h-game/scss/style.scss */
+.contact .contact__name {
+  font-family: 'Poppins', sans-serif;
+  color: #f44336;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 97px; }
+
+/* line 1028, h-game/scss/style.scss */
+.contact .contact__block_left_name {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #f44336;
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 18px; }
+
+/* line 1035, h-game/scss/style.scss */
+.contact .contact__block_left_text {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 300; }
+  /* line 1040, h-game/scss/style.scss */
+  .contact .contact__block_left_text .contact_adres {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  /* line 1045, h-game/scss/style.scss */
+  .contact .contact__block_left_text .conhov:hover {
+    color: black; }
+  /* line 1049, h-game/scss/style.scss */
+  .contact .contact__block_left_text .phone {
+    padding-bottom: 20px; }
+  /* line 1052, h-game/scss/style.scss */
+  .contact .contact__block_left_text .fax {
+    padding-bottom: 20px; }
+  /* line 1055, h-game/scss/style.scss */
+  .contact .contact__block_left_text .email_c {
+    color: #f44336; }
+    /* line 1057, h-game/scss/style.scss */
+    .contact .contact__block_left_text .email_c:hover {
+      color: black; }
+
+/* line 1062, h-game/scss/style.scss */
+.contact .contact__block_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 115px;
+  color: #838383;
+  font-size: 14px;
+  font-weight: 400; }
+  /* line 1069, h-game/scss/style.scss */
+  .contact .contact__block_right a {
+    text-decoration: none; }
+  /* line 1072, h-game/scss/style.scss */
+  .contact .contact__block_right .contact__block_right_button {
+    margin-top: 20px;
+    background-color: #f44336;
+    width: 140px;
+    height: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 13px; }
+    /* line 1084, h-game/scss/style.scss */
+    .contact .contact__block_right .contact__block_right_button:hover {
+      opacity: 0.5; }
+  /* line 1088, h-game/scss/style.scss */
+  .contact .contact__block_right .formname {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 470px;
+    height: 42px;
+    border: 1px solid #999999;
+    padding-left: 15px;
+    margin-bottom: 15px; }
+  /* line 1096, h-game/scss/style.scss */
+  .contact .contact__block_right .formemail {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 470px;
+    height: 42px;
+    border: 1px solid #999999;
+    padding-left: 15px;
+    margin-bottom: 15px; }
+  /* line 1104, h-game/scss/style.scss */
+  .contact .contact__block_right .formmessage {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 470px;
+    height: 168px;
+    border: 1px solid #999999;
+    padding-left: 15px;
+    padding-bottom: 130px; }
+
+/* line 1113, h-game/scss/style.scss */
+.contact .contact__map_name {
+  font-family: 'Poppins', sans-serif;
+  color: #f44336;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 25px; }
+
+/* line 1122, h-game/scss/style.scss */
+.contact .contact__map_img {
+  padding-bottom: 90px; }
+
+/* line 1127, h-game/scss/style.scss */
+.footer {
+  background-color: #000000;
+  height: 71px; }
+  /* line 1130, h-game/scss/style.scss */
+  .footer .footer__copy {
+    padding-top: 29px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */

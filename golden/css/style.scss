@@ -1,0 +1,238 @@
+@import "_null";
+@import "_fonts";
+.container {
+   width: 1400px;
+   margin: 0 auto;
+}
+.header {
+   background-image: url(../img/bgimg.jpg);
+   height: 700px;
+}
+.header__logo {
+   margin-top: 50px;
+}
+.header__nav {
+   display: flex;
+   justify-content: space-around;
+}
+.header__nav_menu {
+   margin-top: 50px;
+   & a {
+      text-decoration: none;
+      color: #ffffff;
+      &:hover {
+         opacity: 0.5;
+      }
+   }
+}
+.header__nav_menu ul {
+   display: flex;
+}
+.header__nav_menu li {
+   color: #ffffff;
+   font-family: "Arial Regular";
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   padding-right: 40px;
+   &:last-child {
+      padding-right: 0;
+   }
+}
+.header__main {
+   text-align: center;
+}
+.header__main_name {
+   margin-top: 180px;
+   color: #ffffff;
+   font-family: "Arial Regular";
+   font-size: 40px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+.header__main_text {
+   margin-top: 51px;
+   color: #ffffff;
+   font-family: "Arial Regular";
+   font-size: 75px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.header__main_btn {
+   margin-top: 59px;
+   cursor: pointer;
+   display: inline-block;
+   text-align: center;
+   color: #484543;
+   font-family: "Arial Regular";
+   font-size: 18px;
+   font-weight: 400;
+   text-transform: uppercase;
+   width: 240px;
+   height: 65px;
+   background-color: #fed136;
+   border-radius: 5px;
+   padding-top: 23px;
+   &:hover {
+      opacity: 0.7;
+   }
+}
+.slider1 {
+   margin-top: 119px;
+   text-align: center;
+}
+.slider1__name {
+   color: #222222;
+   font-family: "Arial Regular";
+   font-size: 40px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.slider1__text {
+   margin-top: 20px;
+   color: #777777;
+   font-family: "Arial Regular";
+   font-size: 16px;
+   font-weight: 400;
+}
+.slider1__main {
+   margin-top: 77px;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 118px;
+}
+.slider1__main_block {
+   margin-left: 81px;
+   &:first-child {
+      margin-left: 0;
+   }
+}
+.slider1__main_block_logo {
+   margin-bottom: 24px;
+}
+.slider1__main_block_name {
+   color: #222222;
+   font-family: "Arial Regular";
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 18px;
+}
+.slider1__main_block_text {
+   color: #777777;
+   font-family: "Arial Regular";
+   font-size: 14px;
+   font-weight: 400;
+}
+.slider2 {
+   background-color: #f7f7f7;
+   text-align: center;
+}
+.slider2__name {
+   display: inline-block;
+   margin-top: 119px;
+   color: #222222;
+   font-family: "Arial Regular";
+   font-size: 40px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.slider2__text {
+   margin-top: 20px;
+   color: #777777;
+   font-family: "Arial Regular";
+   font-size: 16px;
+   font-weight: 400;
+}
+.slider2__main {
+   padding-bottom: 134px;
+   display: flex;
+   justify-content: center;
+   margin-top: 75px;
+}
+.slider2__main_block {
+   margin-right: 35px;
+   & :last-child {
+      margin-right: 0;
+   }
+   &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+   }
+}
+.slider3 {
+   margin-top: 127px;
+   text-align: center;
+}
+.slider3__name {
+   display: inline-block;
+   color: #222222;
+   font-family: "Arial Regular";
+   font-size: 40px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+.slider3__text {
+   color: #777777;
+   font-family: "Arial Regular";
+   font-size: 16px;
+   font-weight: 400;
+}
+.slider3__main {
+   margin-top: 77px;
+}
+.slider3__main_block {
+   margin-right: 23%;
+   display: flex;
+   justify-content: center;
+}
+.slider3__block_left {
+   margin-right: 40px;
+   margin-bottom: 93px;
+}
+.slider3__main_block_name {
+   color: #222222;
+   font-family: "Arial Regular";
+   font-size: 24px;
+   font-weight: bold;
+   text-align: right;
+}
+.slider3__main_block_text {
+   color: #777777;
+   font-family: "Arial Regular";
+   font-size: 14px;
+   font-weight: 400;
+   text-align: right;
+   margin-top: 18px;
+}
+.block2 {
+   text-align: left;
+   margin-right: 0px;
+   margin-left: 40px;
+}
+.blockn2 {
+   margin-right: 0;
+   margin-left: 28%;
+}
+.slider3__main_right {
+   &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+   }
+}
+.slider3__main_block_logo {
+}
+.footer {
+   height: 150px;
+   background-color: #282828;
+   text-align: center;
+   padding-top: 80px;
+}
+.footer__text {
+   color: #fff;
+   font-family: "Arial Regular";
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 22px;
+   display: inline-block;
+}

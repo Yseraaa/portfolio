@@ -1,0 +1,309 @@
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std Roman';
+    src: url('../fonts/HelveticaLTStd-Roman.eot');
+    src: url('../fonts/HelveticaLTStd-Roman.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaLTStd-Roman.woff') format('woff'), url('../fonts/HelveticaLTStd-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std Light';
+    src: url('../fonts/HelveticaLTStd-Light.eot');
+    src: url('../fonts/HelveticaLTStd-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaLTStd-Light.woff') format('woff'), url('../fonts/HelveticaLTStd-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std Condensed';
+    src: url('../fonts/HelveticaLTStd-Cond.eot');
+    src: url('../fonts/HelveticaLTStd-Cond.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaLTStd-Cond.woff') format('woff'), url('../fonts/HelveticaLTStd-Cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std Bold';
+    src: url('../fonts/HelveticaLTStd-Bold.eot');
+    src: url('../fonts/HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaLTStd-Bold.woff') format('woff'), url('../fonts/HelveticaLTStd-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.header {
+    height: 104px;
+    background-color: #55adb7;
+    opacity: 0.84;
+}
+
+.logo a {
+    font-family: 'Cherry Swash', cursive;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 25px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 328px;
+    margin-top: 35px;
+}
+
+.menu {
+    height: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 135px;
+
+
+}
+
+.menu-list {
+    font-family: 'Helvetica LT Std Condensed';
+    text-decoration: none;
+    list-style-type: none;
+    color: #dce3e4;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.menu-link {
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 0px 17px;
+    text-align: center;
+}
+
+.active {
+    color: #ffffff;
+}
+
+.menu-list:hover {
+    color: #ffffff;
+}
+
+.apper:after {
+    content: "/";
+    color: #dce3e4;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.slider1 {
+    height: 476px;
+    background-image: url(../img/bgimg.jpg);
+}
+
+.zagolovok {
+    display: inline-block;
+    margin-top: 130px;
+    font-family: 'Helvetica LT Std Bold';
+    color: #e4e4e4;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 381px;
+}
+
+.buttontext {
+    font-family: 'Helvetica LT Std Light';
+    color: #e4e4e4;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 58px;
+}
+
+.button {
+    margin-top: 15px;
+    margin-left: 524px;
+    border: 3px solid #afb1b4;
+    width: 239px;
+    height: 52px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttona {
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.page {
+    background-color: #ffffff;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    margin-left: 13px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 122px;
+}
+
+.pageactive {
+    border: 1px solid #69728c;
+    background-color: #69728c;
+}
+
+.page:hover {
+    border: 1px solid #69728c;
+    background-color: #69728c;
+}
+
+.slider2 {
+    height: 443px;
+    background-color: #ffffff;
+}
+
+.headers2 {
+    margin-top: 83px;
+    font-family: 'Helvetica LT Std Light';
+    color: #4c505d;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 49px;
+    text-align: center;
+}
+
+.desc2 {
+    margin-top: 39px;
+    font-family: 'Helvetica LT Std Roman';
+    color: #4c505d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+
+.shapes {
+    margin-top: 71px;
+    text-align: center;
+}
+
+.shape {
+    margin-left: 127px;
+}
+
+.shapeh:hover {
+    opacity: 0.8;
+}
+
+.slider3 {
+    height: 468px;
+    background-image: url(../img/Slice_5.jpg);
+}
+
+.desk3 {
+    width: 910px;
+    display: inline-block;
+    margin-top: 293px;
+    font-family: 'Helvetica LT Std Light';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    clear: both;
+    margin-left: 214px;
+}
+
+.slider4 {
+    height: 517px;
+    background-image: url(../img/Slice_8.jpg);
+}
+
+.formem {
+    display: inline-block;
+    margin-left: 425px;
+    margin-top: 52px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 164px;
+    padding-left: 500px;
+}
+
+.name {
+    font-family: 'Helvetica LT Std Light';
+    border: 1px solid #d8d8d8;
+    background-color: #ffffff;
+    width: 277px;
+    height: 33px;
+    padding-left: 13px;
+}
+
+.email {
+    font-family: 'Helvetica LT Std Light';
+    border: 1px solid #d8d8d8;
+    background-color: #ffffff;
+    width: 277px;
+    height: 33px;
+    margin-top: 15px;
+    padding-left: 13px;
+}
+
+.msg {
+    font-family: 'Helvetica LT Std Light';
+    padding-top: 12px;
+    margin-top: 15px;
+    border: 1px solid #d8d8d8;
+    background-color: #ffffff;
+    width: 277px;
+    height: 80px;
+    padding-left: 13px;
+    color: #4c505d;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.sumbit {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 33px;
+    width: 66px;
+    height: 67px;
+    background-image: url(../img/Shape_5.png);
+}
+.sumbit:hover {
+    opacity: 0.8;
+}
+.footertext {
+    display: inline-block;
+    margin-top: 13px;
+    margin-left: 549px;
+        font-family: 'Helvetica LT Std Condensed';
+    color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+line-height: 25px;
+text-transform: uppercase;
+}
+.footer {
+    height: 40px;
+    background-color: #00d089;
+}
